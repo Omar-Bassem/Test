@@ -50,3 +50,50 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Show in Large desktops and laptops */
+@media (min-width: 1200px) {
+  body{
+      background-image: url('../pics/background.jpeg');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+  }
+}
+
+/* Hide in Other Small Devices */
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body{
+      background-image: url("../pics/background.jpeg");
+      background-size: cover;
+      background-position: top;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  body{
+      background-image: url("../pics/background.jpeg");
+      background-size: cover;
+      background-position: top;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  body{
+      background-image: url("../pics/mobilebg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+  }
+}
+
+@media (max-width: 480px) {
+  body{
+    background-image: url("../pics/mobilebg.jpg");
+    background-position : top;
+    background-size: cover;
+    
+  }
+}
